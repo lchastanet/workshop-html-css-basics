@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: block;
+}
+
+header {
+  background-image: url("https://loremflickr.com/400/300");
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 10px;
+}
+
+main section.featured-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+main section.featured-posts article:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1 / 2;
+}

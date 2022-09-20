@@ -34,7 +34,7 @@ nav a {
 
 header {
   height: 250px;
-  background-image: url("https://loremflickr.com/cache/resized/65535_51508628761_9179f7d7d0_h_1200_300_nofilter.jpg");
+  background-image: url("https://loremflickr.com/1200/300");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ header {
 header h1 {
   margin-top: 1em;
   color: #fff;
-  font-size: 3em;
+  font-size: clamp(20px, 3vw, 40px);
 }
 
 main {
@@ -68,14 +68,14 @@ section p {
   text-align: justify;
 }
 
-section div {
+main section.featured-posts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
 }
 
-section div article {
-  height: 75px;
+main section.featured-posts article {
+  min-height: 75px;
   display: flex;
   align-items: center;
   background-color: #fff;

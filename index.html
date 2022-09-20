@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Workshop</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-device-width : 460px)"
+    />
+    <link
+      rel="stylesheet"
+      href="large.css"
+      media="screen and (min-device-width : 1000px)"
+    />
   </head>
   <body>
     <nav>
@@ -32,22 +42,23 @@
           Sunt perferendis tempora, earum ullam deleniti illo dolorum.
         </p>
       </section>
-      <section>
+      <section class="featured-posts">
         <h2>Featured posts</h2>
-        <div>
-          <article>
-            <h1>Article 1</h1>
-          </article>
-          <article>
-            <h1>Article 2</h1>
-          </article>
-          <article>
-            <h1>Article 3</h1>
-          </article>
-          <article>
-            <h1>Article 4</h1>
-          </article>
-        </div>
+        <article>
+          <h1>Article 1</h1>
+        </article>
+        <article>
+          <h1>Article 2</h1>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+        </article>
+        <article>
+          <h1>Article 4</h1>
+        </article>
+        <article>
+          <h1>Article 5</h1>
+        </article>
       </section>
     </main>
     <footer><p>&copy; 2022 wilders</p></footer>
